@@ -3,9 +3,10 @@
 # Once you log in at /admin/, you'll see the categories and product fields defined below.
 
 backend:
-  name: git-gateway
+  name: github
+  repo: noorulakbar8098/alhudha-textile
   branch: main
-
+  base_url: https://decap-oauth.netlify.app
 # Where Decap saves uploaded images. Public URL: /uploads/<filename>
 media_folder: "uploads"
 public_folder: "/uploads"
