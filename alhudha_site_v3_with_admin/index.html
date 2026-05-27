@@ -117,7 +117,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header>  
 
   <!-- ============ TRUST BAR ============ -->
   <section class="trust-bar">
@@ -503,6 +503,18 @@
         if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
       });
     });
+  </script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
