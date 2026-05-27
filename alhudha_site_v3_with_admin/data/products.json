@@ -20,7 +20,7 @@
           "price": 1299,
           "old_price": 1799,
           "badge": "featured",
-          "image": "/uploads/IMG_9261.png",
+          "image": "/uploads/anarkali.png",
           "color": "#9C27B0"
         },
         {
@@ -29,16 +29,16 @@
           "price": 399,
           "old_price": 599,
           "badge": "new",
-          "image": "/uploads/cotton-kurti.jpg",
+          "image": "/uploads/casual-tops.png",
           "color": "#FF9800"
         },
         {
-          "name": "Formal Blouse",
+          "name": "Womens Innerwear",
           "meta": "Sizes S – XXL · Office wear",
-          "price": 749,
-          "old_price": 999,
+          "price": 349,
+          "old_price": 699,
           "badge": "",
-          "image": "/uploads/cotton-kurti.jpg",
+          "image": "/uploads/women-innerwear.png",
           "color": "#03A9F4"
         }
       ]
@@ -60,28 +60,28 @@
         {
           "name": "Printed Palazzo Pants",
           "meta": "Sizes M – XXL · Flowy fit",
-          "price": 699,
-          "old_price": 999,
+          "price": 299,
+          "old_price": 599,
           "badge": "",
-          "image": "/uploads/cotton-kurti.jpg",
+          "image": "/uploads/palazzo.png",
           "color": "#E53935"
         },
         {
-          "name": "Cotton Salwar",
+          "name": "Girls Night Suits",
           "meta": "Sizes M – XXL · Premium cotton",
           "price": 449,
           "old_price": 699,
           "badge": "",
-          "image": "/uploads/cotton-kurti.jpg",
+          "image": "/uploads/girls-nightdress.jpg",
           "color": "#546E7A"
         },
         {
-          "name": "Men's Slim-Fit Trousers",
-          "meta": "Sizes 28 – 40 · Formal",
-          "price": 899,
+          "name": "Hijab Collections",
+          "meta": "All types of shawls & stoles",
+          "price": 199,
           "old_price": 1299,
           "badge": "new",
-          "image": "/uploads/cotton-kurti.jpg",
+          "image": "/uploads/hijab-shawls.jpg",
           "color": "#3949AB"
         }
       ]
