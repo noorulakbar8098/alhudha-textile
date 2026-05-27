@@ -11,7 +11,7 @@
           "price": 599,
           "old_price": 899,
           "badge": "sale",
-          "image": "/uploads/cotton-kurti.jpeg",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#F48FB1"
         },
         {
@@ -20,7 +20,7 @@
           "price": 1299,
           "old_price": 1799,
           "badge": "featured",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#9C27B0"
         },
         {
@@ -29,7 +29,7 @@
           "price": 399,
           "old_price": 599,
           "badge": "new",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#FF9800"
         },
         {
@@ -38,7 +38,7 @@
           "price": 749,
           "old_price": 999,
           "badge": "",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#03A9F4"
         }
       ]
@@ -54,7 +54,7 @@
           "price": 499,
           "old_price": 799,
           "badge": "bestseller",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#1976D2"
         },
         {
@@ -63,7 +63,7 @@
           "price": 699,
           "old_price": 999,
           "badge": "",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#E53935"
         },
         {
@@ -72,7 +72,7 @@
           "price": 449,
           "old_price": 699,
           "badge": "",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#546E7A"
         },
         {
@@ -81,7 +81,7 @@
           "price": 899,
           "old_price": 1299,
           "badge": "new",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#3949AB"
         }
       ]
@@ -97,7 +97,7 @@
           "price": 1499,
           "old_price": 2299,
           "badge": "featured",
-          "image": "",
+          "image": "/uploads/cotton-kurti.jpg",
           "color": "#FB8C00"
         },
         {
