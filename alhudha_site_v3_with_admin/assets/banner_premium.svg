@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 720" width="1920" height="720">
+  <defs>
+    <!-- Rich emerald gradient background -->
+    <linearGradient id="bgRich" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082018"/>
+      <stop offset="35%" stop-color="#0F3D27"/>
+      <stop offset="65%" stop-color="#0A2E1D"/>
+      <stop offset="100%" stop-color="#051410"/>
+    </linearGradient>
+
+    <!-- Premium gold foil gradient -->
+    <linearGradient id="foilGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E6A8"/>
+      <stop offset="25%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#B8941F"/>
+      <stop offset="75%" stop-color="#E5C158"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+
+    <linearGradient id="foilGoldVert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7E9B3"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+
+    <!-- Soft golden mist for atmospheric depth -->
+    <radialGradient id="mist" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#D4AF37" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </radialGradient>
+
+    <!-- Subtle damask textile pattern -->
+    <pattern id="damask" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g opacity="0.06">
+        <path d="M60,15 Q75,30 60,45 Q45,30 60,15 Z M60,75 Q75,90 60,105 Q45,90 60,75 Z M15,60 Q30,45 45,60 Q30,75 15,60 Z M75,60 Q90,45 105,60 Q90,75 75,60 Z"
+              fill="#D4AF37"/>
+        <circle cx="60" cy="60" r="3" fill="#D4AF37"/>
+        <circle cx="60" cy="60" r="8" fill="none" stroke="#D4AF37" stroke-width="0.4"/>
+      </g>
+    </pattern>
+
+    <!-- Mandala motif (Indian textile heritage) -->
+    <symbol id="mandala" viewBox="0 0 100 100">
+      <g fill="none" stroke="#D4AF37" stroke-width="0.8">
+        <circle cx="50" cy="50" r="48" stroke-opacity="0.4"/>
+        <circle cx="50" cy="50" r="38" stroke-opacity="0.5"/>
+        <circle cx="50" cy="50" r="28" stroke-opacity="0.6"/>
+        <circle cx="50" cy="50" r="18" stroke-opacity="0.7"/>
+        <g stroke-opacity="0.55">
+          <path d="M50,2 L50,98 M2,50 L98,50"/>
+          <path d="M16,16 L84,84 M84,16 L16,84"/>
+        </g>
+        <g stroke-opacity="0.4">
+          <path d="M50,12 Q60,32 50,50 Q40,32 50,12 Z"/>
+          <path d="M50,88 Q60,68 50,50 Q40,68 50,88 Z"/>
+          <path d="M12,50 Q32,40 50,50 Q32,60 12,50 Z"/>
+          <path d="M88,50 Q68,40 50,50 Q68,60 88,50 Z"/>
+        </g>
+        <circle cx="50" cy="50" r="4" fill="#D4AF37" fill-opacity="0.8"/>
+      </g>
+    </symbol>
+
+    <!-- Refined gold paisley (Indian motif) -->
+    <symbol id="paisleyFine" viewBox="0 0 80 110">
+      <g fill="none" stroke="#D4AF37" stroke-width="1">
+        <path d="M40,8 Q15,38 22,70 Q30,95 50,95 Q72,90 65,65 Q58,40 40,8 Z" stroke-opacity="0.55"/>
+        <path d="M40,18 Q22,42 30,68 Q38,86 50,84 Q62,80 58,62 Q52,42 40,18 Z" stroke-opacity="0.45"/>
+        <circle cx="42" cy="60" r="5" fill="#D4AF37" fill-opacity="0.4" stroke-opacity="0.6"/>
+        <circle cx="42" cy="60" r="2" fill="#D4AF37" fill-opacity="0.8" stroke="none"/>
+        <path d="M40,28 Q34,40 42,52" stroke-opacity="0.35"/>
+      </g>
+    </symbol>
+
+    <!-- Diamond ornament -->
+    <symbol id="diamond" viewBox="0 0 30 30">
+      <path d="M15,2 L28,15 L15,28 L2,15 Z"
+            fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.7"/>
+      <path d="M15,8 L22,15 L15,22 L8,15 Z" fill="#D4AF37" fill-opacity="0.5"/>
+      <circle cx="15" cy="15" r="1.5" fill="#F5E6A8"/>
+    </symbol>
+
+    <!-- Elegant flourish (single line) -->
+    <symbol id="flourishLuxe" viewBox="0 0 280 60">
+      <g fill="none" stroke="#D4AF37" stroke-linecap="round">
+        <path d="M2,30 Q40,5 80,28 T160,28 Q200,28 240,12" stroke-width="1.2" stroke-opacity="0.65"/>
+        <path d="M2,30 Q40,55 80,32 T160,32 Q200,32 240,48" stroke-width="0.8" stroke-opacity="0.4"/>
+        <circle cx="240" cy="12" r="3" fill="#D4AF37" fill-opacity="0.8" stroke="none"/>
+        <circle cx="240" cy="48" r="2" fill="#D4AF37" fill-opacity="0.5" stroke="none"/>
+        <circle cx="80" cy="28" r="1.8" fill="#D4AF37" fill-opacity="0.7" stroke="none"/>
+        <circle cx="160" cy="28" r="1.5" fill="#D4AF37" fill-opacity="0.6" stroke="none"/>
+      </g>
+    </symbol>
+
+    <!-- Sari/Saree silhouette (heritage drape) -->
+    <symbol id="saree" viewBox="0 0 220 400">
+      <g fill="none" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Draped fabric flowing -->
+        <path d="M40,30 Q60,80 50,140 Q35,220 30,300 Q28,360 60,395"
+              stroke-width="2" stroke-opacity="0.5"/>
+        <path d="M80,40 Q100,90 90,150 Q70,230 65,310 Q62,365 95,395"
+              stroke-width="1.8" stroke-opacity="0.45"/>
+        <path d="M120,38 Q140,95 130,160 Q108,240 100,320 Q96,370 130,395"
+              stroke-width="2" stroke-opacity="0.55"/>
+        <path d="M160,30 Q180,82 170,142 Q145,225 138,308 Q134,365 170,395"
+              stroke-width="1.8" stroke-opacity="0.5"/>
+        <!-- Decorative border lines on fabric -->
+        <path d="M45,200 Q90,210 135,200 Q170,195 195,205"
+              stroke-width="0.6" stroke-opacity="0.35" stroke-dasharray="2,4"/>
+        <path d="M40,250 Q85,260 130,250 Q170,245 195,255"
+              stroke-width="0.6" stroke-opacity="0.35" stroke-dasharray="2,4"/>
+        <!-- Embroidered dots -->
+        <circle cx="60" cy="180" r="2" fill="#D4AF37" fill-opacity="0.5"/>
+        <circle cx="100" cy="180" r="2" fill="#D4AF37" fill-opacity="0.5"/>
+        <circle cx="140" cy="180" r="2" fill="#D4AF37" fill-opacity="0.5"/>
+        <circle cx="180" cy="180" r="2" fill="#D4AF37" fill-opacity="0.5"/>
+      </g>
+    </symbol>
+
+    <!-- Subtle vertical gradient overlay for depth -->
+    <linearGradient id="depthOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Spotlight on center -->
+    <radialGradient id="spotlight" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ============ BACKGROUND ============ -->
+  <rect width="1920" height="720" fill="url(#bgRich)"/>
+  <rect width="1920" height="720" fill="url(#damask)"/>
+  <rect width="1920" height="720" fill="url(#spotlight)"/>
+  <rect width="1920" height="720" fill="url(#depthOverlay)"/>
+
+  <!-- Atmospheric gold mist -->
+  <ellipse cx="960" cy="320" rx="700" ry="400" fill="url(#mist)" opacity="0.7"/>
+  <ellipse cx="200" cy="600" rx="350" ry="200" fill="url(#mist)" opacity="0.4"/>
+  <ellipse cx="1720" cy="600" rx="350" ry="200" fill="url(#mist)" opacity="0.4"/>
+
+  <!-- ============ HERITAGE SAREE SILHOUETTES (left + right backdrop) ============ -->
+  <g opacity="0.22" transform="translate(40, 130)">
+    <use href="#saree" width="240" height="430"/>
+  </g>
+  <g opacity="0.22" transform="translate(1640, 130) scale(-1, 1) translate(-240, 0)">
+    <use href="#saree" width="240" height="430"/>
+  </g>
+
+  <!-- ============ MANDALA CORNERS (heritage Indian textile motif) ============ -->
+  <use href="#mandala" x="50" y="50" width="120" height="120" opacity="0.55"/>
+  <use href="#mandala" x="1750" y="50" width="120" height="120" opacity="0.55"/>
+  <use href="#mandala" x="50" y="550" width="120" height="120" opacity="0.55"/>
+  <use href="#mandala" x="1750" y="550" width="120" height="120" opacity="0.55"/>
+
+  <!-- Smaller mandalas inside corners -->
+  <use href="#mandala" x="180" y="180" width="60" height="60" opacity="0.4"/>
+  <use href="#mandala" x="1680" y="180" width="60" height="60" opacity="0.4"/>
+  <use href="#mandala" x="180" y="480" width="60" height="60" opacity="0.4"/>
+  <use href="#mandala" x="1680" y="480" width="60" height="60" opacity="0.4"/>
+
+  <!-- ============ DOUBLE GOLD FRAME ============ -->
+  <rect x="100" y="80" width="1720" height="560"
+        fill="none" stroke="url(#foilGold)" stroke-width="2" stroke-opacity="0.85"/>
+  <rect x="110" y="90" width="1700" height="540"
+        fill="none" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.5"/>
+
+  <!-- Frame corner ornaments (diamonds at each corner) -->
+  <use href="#diamond" x="85" y="65" width="30" height="30"/>
+  <use href="#diamond" x="1805" y="65" width="30" height="30"/>
+  <use href="#diamond" x="85" y="625" width="30" height="30"/>
+  <use href="#diamond" x="1805" y="625" width="30" height="30"/>
+
+  <!-- Frame midpoint ornaments -->
+  <g transform="translate(960, 80)">
+    <use href="#diamond" x="-15" y="-15" width="30" height="30"/>
+  </g>
+  <g transform="translate(960, 640)">
+    <use href="#diamond" x="-15" y="-15" width="30" height="30"/>
+  </g>
+  <g transform="translate(100, 360)">
+    <use href="#diamond" x="-15" y="-15" width="30" height="30"/>
+  </g>
+  <g transform="translate(1820, 360)">
+    <use href="#diamond" x="-15" y="-15" width="30" height="30"/>
+  </g>
+
+  <!-- ============ HERITAGE LABEL: HOUSE OF AL HUDHA ============ -->
+  <g transform="translate(960, 170)">
+    <!-- Decorative flourish line -->
+    <use href="#flourishLuxe" x="-280" y="-30" width="240" height="60"/>
+    <use href="#flourishLuxe" x="40" y="-30" width="240" height="60"
+         transform="scale(-1, 1) translate(-280, 0)"/>
+
+    <text x="0" y="6"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="22" font-weight="500" fill="#D4AF37"
+          text-anchor="middle" letter-spacing="10"
+          font-style="italic">House of</text>
+  </g>
+
+  <!-- ============ BRAND NAME — MASSIVE & LUXE ============ -->
+  <g transform="translate(960, 330)">
+    <!-- Shadow / depth layer -->
+    <text x="0" y="0"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="200" font-weight="700"
+          fill="#000000" fill-opacity="0.35"
+          text-anchor="middle" letter-spacing="22">AL HUDHA</text>
+
+    <!-- Underlying gold layer -->
+    <text x="0" y="0"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="200" font-weight="700"
+          fill="url(#foilGold)"
+          text-anchor="middle" letter-spacing="22">AL HUDHA</text>
+
+    <!-- Subtle highlight stroke for definition -->
+    <text x="0" y="0"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="200" font-weight="700"
+          fill="none" stroke="#F5E6A8" stroke-width="0.5" stroke-opacity="0.4"
+          text-anchor="middle" letter-spacing="22">AL HUDHA</text>
+  </g>
+
+  <!-- ============ DIVIDER ORNAMENT ============ -->
+  <g transform="translate(960, 395)">
+    <line x1="-260" y1="0" x2="-50" y2="0" stroke="url(#foilGold)" stroke-width="1.2" stroke-opacity="0.75"/>
+    <use href="#diamond" x="-40" y="-12" width="24" height="24"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#D4AF37" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="1.5" fill="#D4AF37"/>
+    <use href="#diamond" x="16" y="-12" width="24" height="24"/>
+    <line x1="50" y1="0" x2="260" y2="0" stroke="url(#foilGold)" stroke-width="1.2" stroke-opacity="0.75"/>
+  </g>
+
+  <!-- ============ TAGLINE ============ -->
+  <g transform="translate(960, 450)">
+    <text x="0" y="0"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="40" font-weight="500" fill="#FAF4E8" fill-opacity="0.96"
+          font-style="italic"
+          text-anchor="middle" letter-spacing="3">Threads of Heritage  ·  Woven with Care</text>
+  </g>
+
+  <!-- ============ ESTABLISHMENT LINE ============ -->
+  <g transform="translate(960, 500)">
+    <text x="0" y="0"
+          font-family="'Plus Jakarta Sans', Helvetica, Arial, sans-serif"
+          font-size="13" font-weight="600" fill="#D4AF37" fill-opacity="0.85"
+          text-anchor="middle" letter-spacing="8">PREMIUM  ·  TEXTILES  ·  GARMENTS  ·  HOME  ·  HERITAGE</text>
+  </g>
+
+  <!-- ============ PAISLEY ACCENTS (left + right of center) ============ -->
+  <use href="#paisleyFine" x="280" y="280" width="80" height="110" opacity="0.7"/>
+  <use href="#paisleyFine" x="1560" y="280" width="80" height="110" opacity="0.7"
+       transform="scale(-1, 1) translate(-3200, 0)"/>
+
+  <!-- ============ BOTTOM SIGNATURE LINE ============ -->
+  <g transform="translate(960, 595)">
+    <line x1="-180" y1="-20" x2="-30" y2="-20" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.55"/>
+    <use href="#diamond" x="-22" y="-32" width="20" height="20"/>
+    <use href="#diamond" x="2" y="-32" width="20" height="20"/>
+    <line x1="30" y1="-20" x2="180" y2="-20" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.55"/>
+
+    <text x="0" y="8"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="18" font-weight="500" fill="#FAF4E8" fill-opacity="0.78"
+          font-style="italic"
+          text-anchor="middle" letter-spacing="4">A trusted family textile house</text>
+  </g>
+
+  <!-- ============ TOP CENTER ORNAMENT — HERITAGE CROWN ============ -->
+  <g transform="translate(960, 110)">
+    <!-- Decorative crown-style ornament -->
+    <path d="M -30,0 L -25,-12 L -15,-4 L -10,-16 L 0,-8 L 10,-16 L 15,-4 L 25,-12 L 30,0 Z"
+          fill="url(#foilGold)" stroke="#8B6914" stroke-width="0.5"/>
+    <circle cx="-25" cy="-12" r="2" fill="#D4AF37"/>
+    <circle cx="0" cy="-8" r="2.5" fill="#F5E6A8"/>
+    <circle cx="25" cy="-12" r="2" fill="#D4AF37"/>
+  </g>
+
+  <!-- Vignette overlay for depth -->
+  <rect width="1920" height="720" fill="url(#vignette)"/>
+</svg>

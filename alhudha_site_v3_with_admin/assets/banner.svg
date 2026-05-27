@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 720" width="1920" height="720">
+  <defs>
+    <!-- Background gradient: emerald to deep emerald -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3D27"/>
+      <stop offset="50%" stop-color="#1B5E3F"/>
+      <stop offset="100%" stop-color="#0A2E1D"/>
+    </linearGradient>
+
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F4E4BC"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#A88528"/>
+    </linearGradient>
+
+    <linearGradient id="goldGradVert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9E5A8"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9C7C28"/>
+    </linearGradient>
+
+    <!-- Soft gold glow for accents -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Fabric weave pattern -->
+    <pattern id="weave" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="transparent"/>
+      <path d="M0,12 L24,12 M12,0 L12,24" stroke="#D4AF37" stroke-width="0.4" stroke-opacity="0.08"/>
+      <circle cx="12" cy="12" r="0.8" fill="#D4AF37" fill-opacity="0.12"/>
+    </pattern>
+
+    <!-- Cream paper texture -->
+    <pattern id="paperDots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.04"/>
+    </pattern>
+
+    <!-- Decorative paisley shape -->
+    <symbol id="paisley" viewBox="0 0 60 80">
+      <path d="M30,5 Q12,30 18,55 Q24,73 40,72 Q56,68 50,50 Q44,30 30,5 Z"
+            fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4"/>
+      <circle cx="32" cy="50" r="4" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.3"/>
+      <circle cx="28" cy="38" r="2" fill="#D4AF37" fill-opacity="0.25"/>
+    </symbol>
+
+    <!-- Small ornamental star -->
+    <symbol id="star4" viewBox="0 0 24 24">
+      <path d="M12,2 L14,10 L22,12 L14,14 L12,22 L10,14 L2,12 L10,10 Z"
+            fill="#D4AF37" fill-opacity="0.7"/>
+    </symbol>
+
+    <!-- Decorative corner flourish -->
+    <symbol id="flourish" viewBox="0 0 200 100">
+      <path d="M10,90 Q40,60 60,70 T100,50 Q130,30 160,40 T190,20"
+            fill="none" stroke="#D4AF37" stroke-width="2" stroke-opacity="0.55"
+            stroke-linecap="round"/>
+      <path d="M10,90 Q40,70 60,80 T100,65 Q130,50 160,55 T190,45"
+            fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.35"
+            stroke-linecap="round"/>
+      <circle cx="190" cy="20" r="4" fill="#D4AF37" fill-opacity="0.8"/>
+      <circle cx="60" cy="70" r="3" fill="#D4AF37" fill-opacity="0.6"/>
+      <circle cx="100" cy="50" r="2" fill="#D4AF37" fill-opacity="0.5"/>
+    </symbol>
+  </defs>
+
+  <!-- ============ BACKGROUND LAYERS ============ -->
+  <rect width="1920" height="720" fill="url(#bgGrad)"/>
+  <rect width="1920" height="720" fill="url(#weave)"/>
+  <rect width="1920" height="720" fill="url(#paperDots)"/>
+
+  <!-- Atmospheric gold glows -->
+  <ellipse cx="1500" cy="200" rx="500" ry="350" fill="url(#goldGlow)" opacity="0.6"/>
+  <ellipse cx="350" cy="550" rx="400" ry="280" fill="url(#goldGlow)" opacity="0.4"/>
+
+  <!-- ============ BACKGROUND FABRIC ELEMENTS (left side draped silk) ============ -->
+  <g opacity="0.18">
+    <!-- Layered draped fabric on left -->
+    <path d="M 0,0 L 0,720 L 280,720 Q 350,500 280,300 Q 200,150 240,0 Z"
+          fill="url(#goldGradVert)" opacity="0.6"/>
+    <path d="M 0,80 Q 80,300 60,500 Q 50,650 120,720 L 0,720 Z"
+          fill="#D4AF37" opacity="0.3"/>
+
+    <!-- Decorative threads -->
+    <path d="M 0,360 Q 100,340 180,380 Q 280,420 380,400"
+          fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.4"/>
+    <path d="M 0,400 Q 100,380 180,420 Q 280,460 380,440"
+          fill="none" stroke="#F4E4BC" stroke-width="0.8" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- ============ BACKGROUND FABRIC ELEMENTS (right side hanging silk) ============ -->
+  <g opacity="0.2">
+    <path d="M 1920,0 L 1920,720 L 1640,720 Q 1570,500 1640,300 Q 1720,150 1680,0 Z"
+          fill="url(#goldGradVert)" opacity="0.7"/>
+    <path d="M 1920,80 Q 1840,300 1860,500 Q 1870,650 1800,720 L 1920,720 Z"
+          fill="#D4AF37" opacity="0.4"/>
+  </g>
+
+  <!-- Decorative paisley pattern in corners -->
+  <use href="#paisley" x="80" y="80" width="100" height="130" opacity="0.5"/>
+  <use href="#paisley" x="1740" y="80" width="100" height="130" opacity="0.5" transform="scale(-1,1) translate(-3580,0)"/>
+  <use href="#paisley" x="80" y="510" width="100" height="130" opacity="0.4" transform="scale(1,-1) translate(0,-1150)"/>
+  <use href="#paisley" x="1740" y="510" width="100" height="130" opacity="0.4" transform="scale(-1,-1) translate(-3580,-1150)"/>
+
+  <!-- Small stars scattered -->
+  <use href="#star4" x="240" y="160" width="20" height="20"/>
+  <use href="#star4" x="1660" y="180" width="20" height="20"/>
+  <use href="#star4" x="180" y="600" width="16" height="16"/>
+  <use href="#star4" x="1720" y="580" width="16" height="16"/>
+  <use href="#star4" x="320" y="100" width="14" height="14"/>
+  <use href="#star4" x="1580" y="110" width="14" height="14"/>
+
+  <!-- ============ CENTRAL DECORATIVE FRAME ============ -->
+  <!-- Outer ornamental box -->
+  <g transform="translate(960, 360)">
+    <!-- Decorative gold border frame -->
+    <rect x="-580" y="-235" width="1160" height="470"
+          fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.5"
+          rx="4"/>
+    <rect x="-570" y="-225" width="1140" height="450"
+          fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.4"
+          rx="2"/>
+
+    <!-- Corner ornaments on the frame -->
+    <g>
+      <!-- Top-left corner -->
+      <path d="M -580,-205 L -560,-205 L -560,-235 M -580,-205 L -580,-225"
+            fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-580" cy="-235" r="4" fill="#D4AF37"/>
+      <!-- Top-right corner -->
+      <path d="M 580,-205 L 560,-205 L 560,-235 M 580,-205 L 580,-225"
+            fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="580" cy="-235" r="4" fill="#D4AF37"/>
+      <!-- Bottom-left corner -->
+      <path d="M -580,205 L -560,205 L -560,235 M -580,205 L -580,225"
+            fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-580" cy="235" r="4" fill="#D4AF37"/>
+      <!-- Bottom-right corner -->
+      <path d="M 580,205 L 560,205 L 560,235 M 580,205 L 580,225"
+            fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="580" cy="235" r="4" fill="#D4AF37"/>
+    </g>
+  </g>
+
+  <!-- ============ EYEBROW LINE: ESTABLISHED / PREMIUM ============ -->
+  <g transform="translate(960, 160)">
+    <line x1="-140" y1="0" x2="-30" y2="0" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.7"/>
+    <use href="#star4" x="-22" y="-9" width="18" height="18"/>
+    <text x="0" y="6" font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="18" font-weight="500" fill="#D4AF37" text-anchor="middle"
+          letter-spacing="6">A FAMILY TRADITION OF QUALITY</text>
+    <use href="#star4" x="4" y="-9" width="18" height="18"/>
+    <line x1="30" y1="0" x2="140" y2="0" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- ============ BRAND NAME (HUGE) ============ -->
+  <g transform="translate(960, 320)">
+    <!-- Subtle text shadow / glow behind name -->
+    <text x="0" y="0" font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="180" font-weight="700" fill="#000000" fill-opacity="0.25"
+          text-anchor="middle" letter-spacing="14">AL HUDHA</text>
+    <!-- Main brand text with gold gradient -->
+    <text x="0" y="0" font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="180" font-weight="700" fill="url(#goldGrad)"
+          text-anchor="middle" letter-spacing="14">AL HUDHA</text>
+  </g>
+
+  <!-- Underline ornament beneath brand name -->
+  <g transform="translate(960, 380)">
+    <line x1="-200" y1="0" x2="-30" y2="0" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.6"/>
+    <circle cx="-22" cy="0" r="3" fill="#D4AF37"/>
+    <use href="#star4" x="-12" y="-12" width="24" height="24"/>
+    <circle cx="22" cy="0" r="3" fill="#D4AF37"/>
+    <line x1="30" y1="0" x2="200" y2="0" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- ============ TAGLINE ============ -->
+  <g transform="translate(960, 440)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', Helvetica, Arial, sans-serif"
+          font-size="34" font-weight="400" fill="#FAF4E8" fill-opacity="0.95"
+          text-anchor="middle" letter-spacing="3">Threads of Quality  ·  Stories of Comfort</text>
+  </g>
+
+  <!-- ============ SUBTAGLINE ============ -->
+  <g transform="translate(960, 488)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', Helvetica, Arial, sans-serif"
+          font-size="16" font-weight="500" fill="#D4AF37" fill-opacity="0.9"
+          text-anchor="middle" letter-spacing="5">PREMIUM TEXTILES  ·  GARMENTS  ·  HOME FABRICS</text>
+  </g>
+
+  <!-- ============ BOTTOM CONTACT STRIP ============ -->
+  <g transform="translate(960, 560)">
+    <!-- WhatsApp pill -->
+    <g transform="translate(-310, 0)">
+      <rect x="-110" y="-22" width="220" height="44" rx="22"
+            fill="#25D366" stroke="#1DA851" stroke-width="1"/>
+      <text x="0" y="6" font-family="'Plus Jakarta Sans', Arial, sans-serif"
+            font-size="15" font-weight="700" fill="white" text-anchor="middle"
+            letter-spacing="0.5">💬  +91 80983 36237</text>
+    </g>
+
+    <!-- Phone pill -->
+    <g transform="translate(0, 0)">
+      <rect x="-110" y="-22" width="220" height="44" rx="22"
+            fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+      <text x="0" y="6" font-family="'Plus Jakarta Sans', Arial, sans-serif"
+            font-size="15" font-weight="600" fill="#FAF4E8" text-anchor="middle"
+            letter-spacing="0.5">📞  +91 81481 31929</text>
+    </g>
+
+    <!-- Visit Store pill -->
+    <g transform="translate(310, 0)">
+      <rect x="-110" y="-22" width="220" height="44" rx="22"
+            fill="url(#goldGrad)" stroke="#A88528" stroke-width="1"/>
+      <text x="0" y="6" font-family="'Plus Jakarta Sans', Arial, sans-serif"
+            font-size="15" font-weight="700" fill="#0F3D27" text-anchor="middle"
+            letter-spacing="0.5">📍  VISIT OUR STORE</text>
+    </g>
+  </g>
+
+  <!-- ============ TRUST BADGES STRIP (bottom) ============ -->
+  <g transform="translate(960, 640)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', Arial, sans-serif"
+          font-size="13" font-weight="500" fill="#FAF4E8" fill-opacity="0.7"
+          text-anchor="middle" letter-spacing="3">
+      ✦  10+ YEARS OF TRUST  ✦  500+ PRODUCTS  ✦  1000+ HAPPY CUSTOMERS  ✦  FREE LOCAL DELIVERY  ✦  7-DAY EXCHANGE  ✦
+    </text>
+  </g>
+
+  <!-- ============ DECORATIVE FLOURISHES (top corners) ============ -->
+  <use href="#flourish" x="60" y="50" width="200" height="100"/>
+  <use href="#flourish" x="1660" y="50" width="200" height="100" transform="scale(-1,1) translate(-3520,0)"/>
+
+  <!-- ============ FABRIC SWATCHES (small accents on side) ============ -->
+  <!-- Left vertical fabric swatches -->
+  <g transform="translate(80, 360)">
+    <rect x="0" y="-100" width="16" height="200" rx="3"
+          fill="#D4AF37" opacity="0.7"/>
+    <rect x="0" y="-100" width="16" height="200" rx="3"
+          fill="url(#weave)"/>
+  </g>
+  <g transform="translate(110, 360)">
+    <rect x="0" y="-80" width="10" height="160" rx="2"
+          fill="#F4E4BC" opacity="0.5"/>
+  </g>
+
+  <!-- Right vertical fabric swatches -->
+  <g transform="translate(1824, 360)">
+    <rect x="0" y="-100" width="16" height="200" rx="3"
+          fill="#D4AF37" opacity="0.7"/>
+    <rect x="0" y="-100" width="16" height="200" rx="3"
+          fill="url(#weave)"/>
+  </g>
+  <g transform="translate(1810, 360)">
+    <rect x="0" y="-80" width="10" height="160" rx="2"
+          fill="#F4E4BC" opacity="0.5"/>
+  </g>
+
+  <!-- ============ TOP RIBBON / "EST." BADGE ============ -->
+  <g transform="translate(960, 90)">
+    <rect x="-58" y="-22" width="116" height="36" rx="3"
+          fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="0" y="3" font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="14" font-weight="500" fill="#D4AF37"
+          text-anchor="middle" letter-spacing="2">EST. · PREMIUM</text>
+  </g>
+
+</svg>

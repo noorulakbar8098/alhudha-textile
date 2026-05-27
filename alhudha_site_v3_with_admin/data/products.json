@@ -1,0 +1,262 @@
+{
+  "categories": [
+    {
+      "id": "women-tops",
+      "name": "Women's Tops",
+      "subtitle": "Kurtis, blouses, tunics — daily wear to festive picks.",
+      "products": [
+        {
+          "name": "Printed Cotton Kurti",
+          "meta": "Sizes XS – XXL · 8 colours",
+          "price": 599,
+          "old_price": 899,
+          "badge": "sale",
+          "image": "",
+          "color": "#F48FB1"
+        },
+        {
+          "name": "Embroidered Anarkali Top",
+          "meta": "Sizes S – XXL · Festive collection",
+          "price": 1299,
+          "old_price": 1799,
+          "badge": "featured",
+          "image": "",
+          "color": "#9C27B0"
+        },
+        {
+          "name": "Casual Cotton Top",
+          "meta": "Sizes XS – XL · Everyday wear",
+          "price": 399,
+          "old_price": 599,
+          "badge": "new",
+          "image": "",
+          "color": "#FF9800"
+        },
+        {
+          "name": "Formal Blouse",
+          "meta": "Sizes S – XXL · Office wear",
+          "price": 749,
+          "old_price": 999,
+          "badge": "",
+          "image": "",
+          "color": "#03A9F4"
+        }
+      ]
+    },
+    {
+      "id": "bottoms",
+      "name": "Women's Bottoms",
+      "subtitle": "Leggings, palazzos, salwars, trousers.",
+      "products": [
+        {
+          "name": "Stretch Leggings (Pack of 2)",
+          "meta": "Sizes S – XXL · 10+ colours",
+          "price": 499,
+          "old_price": 799,
+          "badge": "bestseller",
+          "image": "",
+          "color": "#1976D2"
+        },
+        {
+          "name": "Printed Palazzo Pants",
+          "meta": "Sizes M – XXL · Flowy fit",
+          "price": 699,
+          "old_price": 999,
+          "badge": "",
+          "image": "",
+          "color": "#E53935"
+        },
+        {
+          "name": "Cotton Salwar",
+          "meta": "Sizes M – XXL · Premium cotton",
+          "price": 449,
+          "old_price": 699,
+          "badge": "",
+          "image": "",
+          "color": "#546E7A"
+        },
+        {
+          "name": "Men's Slim-Fit Trousers",
+          "meta": "Sizes 28 – 40 · Formal",
+          "price": 899,
+          "old_price": 1299,
+          "badge": "new",
+          "image": "",
+          "color": "#3949AB"
+        }
+      ]
+    },
+    {
+      "id": "shawls",
+      "name": "Shawls & Dupattas",
+      "subtitle": "Soft, warm, beautiful — for every season and occasion.",
+      "products": [
+        {
+          "name": "Pashmina Wool Shawl",
+          "meta": "Soft & warm · Premium quality",
+          "price": 1499,
+          "old_price": 2299,
+          "badge": "featured",
+          "image": "",
+          "color": "#FB8C00"
+        },
+        {
+          "name": "Embroidered Silk Dupatta",
+          "meta": "Festive · Hand-finished work",
+          "price": 999,
+          "old_price": 1499,
+          "badge": "",
+          "image": "",
+          "color": "#EC407A"
+        },
+        {
+          "name": "Plain Cotton Shawl",
+          "meta": "Lightweight · Year-round",
+          "price": 399,
+          "old_price": 599,
+          "badge": "bestseller",
+          "image": "",
+          "color": "#795548"
+        },
+        {
+          "name": "Printed Chiffon Dupatta",
+          "meta": "Light & flowy · 10+ designs",
+          "price": 299,
+          "old_price": 499,
+          "badge": "",
+          "image": "",
+          "color": "#00897B"
+        }
+      ]
+    },
+    {
+      "id": "women-essentials",
+      "name": "Women's Essentials",
+      "subtitle": "Comfortable everyday basics and daily wear.",
+      "products": [
+        {
+          "name": "Cotton Camisole — Pack of 3",
+          "meta": "Sizes S – XXL · Multi-colour",
+          "price": 449,
+          "old_price": 699,
+          "badge": "",
+          "image": "",
+          "color": "#8E24AA"
+        },
+        {
+          "name": "Soft Cotton Petticoat",
+          "meta": "Saree pairing · Multiple colours",
+          "price": 349,
+          "old_price": 499,
+          "badge": "bestseller",
+          "image": "",
+          "color": "#FBC02D"
+        },
+        {
+          "name": "Cotton Night Gown",
+          "meta": "Comfort fit · Free size",
+          "price": 599,
+          "old_price": 899,
+          "badge": "",
+          "image": "",
+          "color": "#3F51B5"
+        },
+        {
+          "name": "Cotton Socks — Pack of 6",
+          "meta": "Ankle length · All sizes",
+          "price": 249,
+          "old_price": 399,
+          "badge": "",
+          "image": "",
+          "color": "#EF5350"
+        }
+      ]
+    },
+    {
+      "id": "men-essentials",
+      "name": "Men's Essentials",
+      "subtitle": "Vests, daily wear, and basics from trusted brands.",
+      "products": [
+        {
+          "name": "Cotton Vest — Pack of 3",
+          "meta": "Sizes S – XXL · White",
+          "price": 399,
+          "old_price": 599,
+          "badge": "bestseller",
+          "image": "",
+          "color": "#43A047"
+        },
+        {
+          "name": "Round-Neck T-Shirt — Pack of 2",
+          "meta": "Sizes S – XXL · Mixed colours",
+          "price": 599,
+          "old_price": 899,
+          "badge": "",
+          "image": "",
+          "color": "#37474F"
+        },
+        {
+          "name": "Cotton Briefs — Pack of 3",
+          "meta": "Sizes 80 – 110 · Trusted brand",
+          "price": 349,
+          "old_price": 499,
+          "badge": "",
+          "image": "",
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Lungi — Pack of 2",
+          "meta": "100% cotton · Multi-colour",
+          "price": 449,
+          "old_price": 699,
+          "badge": "new",
+          "image": "",
+          "color": "#FB8C00"
+        }
+      ]
+    },
+    {
+      "id": "home-textiles",
+      "name": "Home Textiles",
+      "subtitle": "Bedsheets, towels, curtains, accessories.",
+      "products": [
+        {
+          "name": "King Bedsheet + Pillow Covers",
+          "meta": "Premium cotton · King size",
+          "price": 899,
+          "old_price": 1299,
+          "badge": "featured",
+          "image": "",
+          "color": "#FBC02D"
+        },
+        {
+          "name": "Bath Towel — Pack of 2",
+          "meta": "Soft cotton · 400 GSM",
+          "price": 599,
+          "old_price": 899,
+          "badge": "",
+          "image": "",
+          "color": "#00796B"
+        },
+        {
+          "name": "Handkerchief — Pack of 12",
+          "meta": "100% cotton · Soft finish",
+          "price": 199,
+          "old_price": 299,
+          "badge": "",
+          "image": "",
+          "color": "#FF7043"
+        },
+        {
+          "name": "Curtains — Set of 2",
+          "meta": "5ft × 7ft · Multiple designs",
+          "price": 749,
+          "old_price": 1199,
+          "badge": "sale",
+          "image": "",
+          "color": "#689F38"
+        }
+      ]
+    }
+  ]
+}

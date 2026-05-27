@@ -1,0 +1,64 @@
+# AL HUDHA — Decap CMS Configuration
+# This file controls what shows up in the admin panel.
+# Once you log in at /admin/, you'll see the categories and product fields defined below.
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Where Decap saves uploaded images. Public URL: /uploads/<filename>
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Local development mode — comment out before going live if needed
+# local_backend: true
+
+# Display name shown in the admin panel
+site_url: https://alhudha.netlify.app
+display_url: https://alhudha.netlify.app
+logo_url: /cover.png
+
+collections:
+  - name: "products"
+    label: "🛍️  Products"
+    label_singular: "Product Catalog"
+    description: "Manage every product on your website — name, price, photo, badge."
+    files:
+      - name: "catalog"
+        label: "Full product catalog"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            label_singular: "Category"
+            summary: "{{fields.name}}  ·  {{fields.products.length}} products"
+            collapsed: true
+            fields:
+              - { label: "Category ID (URL-friendly, e.g. women-tops)", name: "id", widget: "string" }
+              - { label: "Category Name", name: "name", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+              - label: "Products in this category"
+                name: "products"
+                widget: "list"
+                label_singular: "Product"
+                summary: "{{fields.name}}  ·  ₹{{fields.price}}"
+                fields:
+                  - { label: "Product Name", name: "name", widget: "string" }
+                  - { label: "Description / Sizes / Notes", name: "meta", widget: "string", required: false }
+                  - { label: "Price (₹)", name: "price", widget: "number", value_type: "int", min: 0 }
+                  - { label: "Original / Old Price (₹) — for showing strike-through", name: "old_price", widget: "number", value_type: "int", min: 0, required: false }
+                  - label: "Badge (visual tag on product card)"
+                    name: "badge"
+                    widget: "select"
+                    options:
+                      - { label: "No badge", value: "" }
+                      - { label: "🔥 SALE", value: "sale" }
+                      - { label: "✨ NEW", value: "new" }
+                      - { label: "★ Featured", value: "featured" }
+                      - { label: "🏆 Bestseller", value: "bestseller" }
+                    default: ""
+                    required: false
+                  - { label: "Product Photo (recommended size: 800×1000 px)", name: "image", widget: "image", required: false, allow_multiple: false }
+                  - { label: "Fallback color (used if no photo). Format: #RRGGBB", name: "color", widget: "string", required: false, default: "#D4AF37" }

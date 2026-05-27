@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL HUDHA — Admin Panel</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../cover.png">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; margin: 0; background: #FDF8F0; }
+    .loading {
+      position: fixed; inset: 0; display: grid; place-items: center;
+      background: linear-gradient(135deg, #FDF8F0, #F5EBE0); z-index: 1;
+    }
+    .loading-box {
+      text-align: center; padding: 40px;
+      background: white; border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(27, 94, 63, 0.15);
+    }
+    .loading-box h2 { color: #1B5E3F; margin: 0 0 8px; font-family: Georgia, serif; }
+    .loading-box p { color: #7A8278; margin: 0; }
+  </style>
+</head>
+<body>
+  <div id="loading-screen" class="loading">
+    <div class="loading-box">
+      <h2>AL HUDHA · Admin Panel</h2>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Decap CMS — free, self-hosted, no signup -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- Hide loading screen once CMS boots -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var el = document.getElementById('loading-screen');
+        if (el) el.style.display = 'none';
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

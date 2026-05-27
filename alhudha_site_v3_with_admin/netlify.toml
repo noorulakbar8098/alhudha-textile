@@ -1,0 +1,25 @@
+# AL HUDHA — Netlify config
+# This file enables Netlify Identity + Git Gateway so the admin panel works.
+# When you deploy to Netlify, this file is read automatically.
+
+[build]
+  publish = "."
+
+# Make /admin a clean URL
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+# Allow large image uploads (default is 5 MB)
+[[headers]]
+  for = "/uploads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Allow JSON to be read by the site at runtime
+[[headers]]
+  for = "/data/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=60"
+    Access-Control-Allow-Origin = "*"
