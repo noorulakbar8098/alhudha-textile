@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": "Women tops",
+      "name": "Kurtis",
+      "subtitle": "Super product",
+      "products": [
+        {
+          "badge": "new",
+          "color": "#D4AF37",
+          "name": "Nila",
+          "price": 800,
+          "old_price": 1000,
+          "image": "/uploads/images.jpeg"
+        }
+      ]
+    }
+  ]
+}
